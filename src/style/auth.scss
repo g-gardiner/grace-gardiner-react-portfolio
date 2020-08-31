@@ -1,0 +1,60 @@
+.auth-page-wrapper {
+  display: flex;
+  height: calc(100vh - 86px);
+  align-items: center;
+  justify-content: center;
+
+  //* navbar is 84px.*//
+
+  background: url(https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-components {
+  background: $gold;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px 100px 100px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    background: $gold;
+    opacity: 0.85;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 35px;
+    width: 600px;
+    margin-right: 200px;
+    font-family: Poppins;
+
+    &:focus {
+      border: transparent;
+      outline: none;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  button {
+    border: none;
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    width: 100px;
+    font-family: Poppins;
+  }
+}
+
+.main-components {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}

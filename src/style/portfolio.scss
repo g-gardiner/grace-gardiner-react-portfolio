@@ -1,0 +1,123 @@
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  .portfolio-item-wrapper {
+    position: relative;
+
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .portfolio-img-background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 350px;
+      width: 100%;
+    }
+
+    .img-text-wrapper {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      transition: 0.2s;
+
+      .subtitle {
+        transition: 0.3s ease-in-out;
+        color: transparent;
+      }
+    }
+
+    .img-text-wrapper:hover .subtitle {
+      color: white;
+      font-weight: bold;
+      filter: drop-shadow(10px 10px 30px #000000);
+    }
+
+    .logo-wrapper img {
+      width: 50%;
+      margin-bottom: 20px;
+      transition: 0.2s ease-in-out;
+      filter: drop-shadow(20px 10px 25px #000000) blur(0.2rem) grayscale(1)
+        brightness(2);
+
+      &:hover {
+        filter: drop-shadow(20px 10px 25px #000000) blur(0rem) grayscale(0)
+          brightness(1);
+      }
+    }
+
+    .img-text-wrapper:hover {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.filter-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 84px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.filter-buttons button {
+  text-decoration: none;
+  color: black;
+  opacity: 0.65;
+  height: 22px;
+  transition: 0.2s ease-in-out;
+  background-color: white;
+  font-size: 1rem;
+  border: none;
+  font-family: Poppins;
+  border-radius: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  margin-bottom: 3px;
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 50px;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: underline 5px solid gold;
+    box-shadow: -7px 20px 37px -19px rgba(0, 0, 0, 0.47);
+  }
+
+  &:focus {
+    background: $gold;
+    box-shadow: -7px 20px 37px -19px rgba(0, 0, 0, 0.47);
+    outline: none;
+    font-weight: bold;
+    color: white;
+
+    opacity: 1;
+  }
+}
+
+.image-blur {
+  z-index: -1;
+  box-shadow: inset 10px 10px 300px 200px rgba(250, 200, 0, 0.75);
+  outline: 5px solid $gold;
+  overflow: hidden;
+}

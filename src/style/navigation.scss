@@ -1,0 +1,49 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+  }
+
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+
+    margin-right: 20px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding-left: 2px;
+      padding-right: 2px;
+      opacity: 50%;
+      transition: 0.5s;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    &:hover {
+      background: $gold;
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+
+    .nav-link-active {
+      font-weight: bold;
+      opacity: 100%;
+    }
+  }
+}

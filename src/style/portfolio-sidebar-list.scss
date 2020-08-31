@@ -1,0 +1,17 @@
+.portfolio-sidebar-list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  .portfolio-item-thumb {
+    padding: 20px;
+    background: $gold;
+    margin-left: 10px;
+    margin-right: 10px;
+    .portfolio-thumb-image img {
+      width: 100%;
+      filter: drop-shadow(20px 10px 25px #000000);
+    }
+  }
+}

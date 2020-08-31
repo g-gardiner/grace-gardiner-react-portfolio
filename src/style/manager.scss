@@ -1,0 +1,24 @@
+.editor {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.editor > .left-column-editor {
+  background-color: $off-white;
+  justify-content: center;
+  align-items: center;
+}
+.editor > .left-column-editor > .editor-top-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.editor > .left-column-editor > .editor-bottom-items > .image-drag {
+  display: grid;
+  grid-template-columns: 0.15fr 0.15fr 0.15fr;
+}
+
+.editor > .right-column-editor {
+  background-color: $gold;
+  filter: drop-shadow(20px 10px 25px #000000);
+}
