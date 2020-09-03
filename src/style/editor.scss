@@ -1,3 +1,17 @@
+.welcome {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  background: $gold;
+  border-radius: 20px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 95px;
+  z-index: 1;
+}
+
 .portfolio-sidebar-list-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -49,11 +63,11 @@
       border-bottom: 5px solid $gold;
     }
 
-    .delete-icon {
+    .edit-icon {
       transition: 0.2s;
       cursor: pointer;
       &:hover {
-        color: $warning;
+        color: $gold;
       }
     }
   }

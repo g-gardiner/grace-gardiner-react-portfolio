@@ -77,7 +77,9 @@ export default class PortfolioForm extends Component {
       formData.append("portfolio_item[thumb_image]", this.state.thumb_image);
     }
 
-    return formData;
+    return;
+
+    formData;
   }
 
   handleChange(event) {
