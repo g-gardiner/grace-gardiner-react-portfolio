@@ -18,6 +18,9 @@ export default class PortfolioForm extends Component {
       thumb_image: "",
       banner_image: "",
       logo: "",
+      editMode: false,
+      apiUrl: "https://gracegardiner.devcamp.space/portfolio/portfolio_items",
+      apiAction: "post"
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -50,15 +53,18 @@ export default class PortfolioForm extends Component {
 
 
     this.setState({
-      id: id,
-      name: name || "",
-      description: description || "",
-      category: category || "Work",
-      position: position || "",
-      url: url || ""
-    });
+        id: id,
+        name: name || "",
+        description: description || "",
+        category: category || "eCommerce",
+        position: position || "",
+        url: url || "",
+        editMode: true,
+        apiUrl: `https://gracegardiner.devcamp.space/portfolio/portfolio_items/${id}`,
+        apiAction: "patch"
+      });
+    }
   }
-}
 
 
   handleThumbDrop() {
