@@ -13,6 +13,7 @@ export default class PortfolioManager extends Component {
       portfolioToEdit: {},
     };
 
+
     this.handleSuccessfulFormSubmission = this.handleSuccessfulFormSubmission.bind(
       this
     );
@@ -23,9 +24,9 @@ export default class PortfolioManager extends Component {
   }
 
   clearPortfolioToEdit() {
-    this.setState(new Promise(function(resolve, reject) {
+    this.setState({
       portfolioToEdit: {}
-    }))
+    });
   }
 
   handleEditClick(portfolioItem) {

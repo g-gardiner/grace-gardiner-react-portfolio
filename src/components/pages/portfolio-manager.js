@@ -51,10 +51,12 @@ export default class PortfolioManager extends Component {
 
   render() {
     return (
+
+
       <div className="editor">
 
-        <body className="welcome"> Create a new item using the form below. To delete an existing item, see <b>Manager</b>. To edit an existing item, see <b>Edit</b>.</body>
-        
+<body className="welcome"> Create a new item using the form below. To delete an existing item, see <b>Manager</b>. To edit an existing item, see <b>Edit</b>.</body>
+
         <div className="left-column-editor">
 
           <PortfolioForm
