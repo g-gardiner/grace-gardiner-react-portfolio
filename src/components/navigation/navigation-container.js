@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { withRouter } from "react-router";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // HOCs always start with a lowercase letter.
 
 const NavigationComponent = (props) => {
@@ -70,20 +68,12 @@ const NavigationComponent = (props) => {
           : null}
 
         {false ? <button>Add Blog</button> : null}
-
-        {props.loggedInStatus === "LOGGED_IN"
-          ? dynamicLink("/portfolio-editor", "Editor")
-          : null}
-
-        {false ? <button>Add Blog</button> : null}
       </div>
 
       <div className="right-side">
         GRACE GARDINER
         {props.loggedInStatus === "LOGGED_IN" ? (
-          <a onClick={handleSignOut}>
-            <FontAwesomeIcon className="logout-icon" icon="door-open" />
-          </a>
+          <a onClick={handleSignOut}>Bye!</a>
         ) : null}
       </div>
     </div>

@@ -2,13 +2,6 @@ import React, { Component } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDoorOpen,
-  faMinusCircle,
-  faEdit
-} from "@fortawesome/free-solid-svg-icons";
 
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home";
@@ -20,9 +13,6 @@ import Auth from "./pages/auth";
 import NoMatch from "./pages/no-match";
 import PortfolioManager from "./pages/portfolio-manager";
 import PortfolioOverview from "./pages/oversee-portfolio";
-import PortfolioEditor from "./pages/edit-portfolio";
-
-library.add(faMinusCircle, faDoorOpen, faEdit);
 
 //* imports from your own file necessitate passing in the actual path ^^*//
 export default class App extends Component {
@@ -101,11 +91,6 @@ export default class App extends Component {
         key="portfolio-sidebar-list"
         path="/portfolio-sidebar-list"
         component={PortfolioOverview}
-      />,
-      <Route
-        key="edit-portfolio"
-        path="/portfolio-editor"
-        component={PortfolioEditor}
       />,
     ];
   }

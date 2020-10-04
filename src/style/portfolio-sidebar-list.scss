@@ -1,60 +1,17 @@
 .portfolio-sidebar-list-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   align-items: center;
   justify-content: center;
-  padding: 50px 50px 50px 50px;
-
-  background: url(https://images.unsplash.com/photo-1497409988347-cbfaac2f0b12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
   .portfolio-item-thumb {
     padding: 20px;
-    opacity: 0.45;
-    font-size: 8px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background: $gold;
     margin-left: 10px;
     margin-right: 10px;
-
-    transition: 0.2s;
-    background: white;
-    border-bottom: 5px solid transparent;
-
-    .title {
-      display: grid;
-      grid-template-columns: 2fr 1fr 0.3fr;
-    }
-
-    .images-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
-      margin-right: 10px;
-
-      img {
-        height: 100%;
-        width: 75%;
-      }
-    }
-
-    &:hover {
-      opacity: 0.95;
-      border-bottom: 5px solid $gold;
-    }
-
-    .delete-icon {
-      transition: 0.2s;
-      cursor: pointer;
-      &:hover {
-        color: $warning;
-      }
+    .portfolio-thumb-image img {
+      width: 100%;
+      filter: drop-shadow(20px 10px 25px #000000);
     }
   }
 }

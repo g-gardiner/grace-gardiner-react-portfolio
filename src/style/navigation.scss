@@ -28,27 +28,22 @@
       padding-left: 2px;
       padding-right: 2px;
       opacity: 50%;
-      transition: 0.2s;
-      border-bottom: 3px solid transparent;
+      transition: 0.5s;
+
       &:hover {
         color: black;
-        border-bottom: 3px solid $gold;
       }
+    }
+
+    &:hover {
+      background: $gold;
+      padding-left: 11px;
+      padding-right: 11px;
     }
 
     .nav-link-active {
       font-weight: bold;
       opacity: 100%;
-    }
-  }
-
-  .logout-icon {
-    margin-left: 10px;
-    cursor: pointer;
-    color: $gold;
-    transition: 0.2s;
-    &:hover {
-      color: $dark-gold;
     }
   }
 }

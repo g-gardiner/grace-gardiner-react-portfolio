@@ -54,17 +54,18 @@ export default class PortfolioManager extends Component {
 
 
       <div className="editor">
+<<<<<<< HEAD
 
 <body className="welcome"> Create a new item using the form below. To delete an existing item, see <b>Manager</b>. To edit an existing item, see <b>Edit</b>.</body>
 
+=======
+>>>>>>> parent of 5849f1d... Commit for 9/2/20: added new features, pages, imports, and styles.
         <div className="left-column-editor">
-
           <PortfolioForm
             handleSuccessfulFormSubmission={this.handleSuccessfulFormSubmission}
             handleFormSubmissionError={this.handleFormSubmissionError}
           />
         </div>
-
       </div>
     );
   }
